@@ -1,0 +1,14 @@
+// Last updated: 7/21/2026, 4:34:47 PM
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        
+vector <int> runningsum;
+int sum = 0;
+for(int i=0; i<nums.size(); i++){
+    sum = sum + nums[i];
+    runningsum.push_back(sum);
+}
+return runningsum;
+    }
+};
